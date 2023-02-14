@@ -122,7 +122,7 @@ img {
   border-top-left-radius: 20%;
   border-bottom-left-radius: 20%;
   background-color: rgb(95, 80, 80);
-  color: rgb(233, 238, 241);
+  color: rgb(233, 238, 241) !important;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   border-left: 1px solid grey;
@@ -131,7 +131,4 @@ img {
 
 .nav-item a {
   padding: 1 2rem 1 2rem;
-}
-.nav-link:focus {
-  color: aliceblue !important;
 }
