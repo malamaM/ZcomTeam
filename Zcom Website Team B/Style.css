@@ -1,42 +1,43 @@
-
-img {vertical-align: middle;}
-
-#FirstBlock{
-	overflow: hidden;
-}
-#Header{
-	padding: 20px;
-	text-align: left;
-	color: white;
-}
-#Navbar{
-	overflow: hidden;
-	color: white;
-	text-align: center;
-	font-size: 30px;
+img {
+  vertical-align: middle;
 }
 
-#Navbar a{
-	float: left;
-	display: black;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	background-color: grey;
-	margin: 12px;
+#FirstBlock {
+  overflow: hidden;
+}
+#Header {
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+#Navbar {
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
 
-#Navbar a:hover{
-	background-color: black;
+#Navbar a {
+  float: left;
+  display: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: grey;
+  margin: 12px;
 }
 
-#SlideFade{
+#Navbar a:hover {
+  background-color: black;
+}
+
+#SlideFade {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.SlideShow{
+.SlideShow {
   display: none;
 }
 
@@ -71,8 +72,12 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 img {
@@ -82,7 +87,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -104,8 +110,28 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+.nav-item {
+  margin: 0 1rem 0 1rem;
+}
+.nav-item :hover {
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  background-color: rgb(95, 80, 80);
+  color: rgb(233, 238, 241);
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
 
+.nav-item a {
+  padding: 1 2rem 1 2rem;
+}
+.nav-link:focus {
+  color: aliceblue !important;
+}
