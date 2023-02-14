@@ -1,6 +1,4 @@
 .nav-item :hover {
-  border-top-left-radius: 20%;
-  border-bottom-left-radius: 20%;
   background-color: rgb(0, 0, 0);
   color: rgb(233, 238, 241) !important;
   border-top: 1px solid grey;
@@ -14,7 +12,28 @@
 }
 ul {
   background-color: grey;
-  border-radius: 3%;
-  width: 25rem;
-  justify-content: space-between;
+  border-radius: 4%;
+  width: 30rem;
+  justify-content: space-evenly;
+}
+.navbar-brand img {
+  width: 4rem;
+  height: 5rem;
+}
+
+.carousel {
+  height: ;
+}
+
+.carousel img {
+  object-fit: cover !important;
+}
+
+header {
+  border: 1px solid red;
+}
+
+.collapse .navbar-collapse {
+  min-height: 4rem;
+  max-height: 5rem;
 }
