@@ -1,0 +1,44 @@
+.nav-item :hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(233, 238, 241) !important;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.nav-item a {
+  padding: 1 2rem 1 2rem;
+}
+ul {
+  border-radius: 4%;
+  width: 30rem;
+  justify-content: space-evenly;
+}
+.navbar-brand img {
+  width: 4rem;
+  height: 5rem;
+}
+
+.carousel img {
+  object-fit: cover !important;
+}
+
+header {
+  background-color: transparent;
+}
+
+.collapse .navbar-collapse {
+  min-height: 4rem;
+  max-height: 5rem;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 10rem !important;
+}
