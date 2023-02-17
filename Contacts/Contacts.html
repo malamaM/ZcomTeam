@@ -13,13 +13,13 @@
 
 <body>
     <!-- implements two rows that are side by side -->
-    <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="container d-flex justify-content-center">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 mx-auto  text-center">
             
-            <p>Contact Us</p>
+            <p class="fs-5 fw-bold">Contact Us</p>
             <br>
-            <p>Send Us A Message</p>
+            <p "fs-5">Send Us A Message</p>
             
             <!-- Input field for contacting us-->
               <form id="emailForm" onsubmit="submitEmail(event)">
@@ -40,13 +40,13 @@
           </div>
 
           <!-- Middle part of website -->
-          <div id="site_map" class="col-4">
-            <h5>Site Map</h5>
-            <h5>All Our Pages</h5>
+          <div id="site_map" class="col-4 mx-auto  text-center">
+            <p class="fs-5 fw-bold" style="margin-top: 0;">Site Map</p>
+            <p class="fs-5">All Our Pages</p>
           </div>
           
           <!-- Right part of the website containing logos and contact information-->
-          <div class="col-4">
+          <div class="col-4 mx-auto  text-center">
             <img src="Logo.jpg" alt="" class="img-fluid rounded rounded-circle">
             
             <div class="container">
