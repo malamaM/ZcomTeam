@@ -251,3 +251,16 @@ form .form-control {
 .footer-bottom {
   background-color: #242933;
 }
+
+
+footer{
+
+}
+
+
+.footer-top {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-image: url(../img/IMG_2274.jpg);
+    background-size: cover;
+}
