@@ -371,6 +371,26 @@
         </div>
     </section><!-- BLOG -->
 
+    <!-- contact-form -->
+
+   <div class="container">
+    <form id="contact-form" method="post" action="send-email.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      
+        <button type="submit" id="send-button">Send</button>
+        <button type="button" id="clear-button">Clear</button>
+      </form>
+   </div>
+      
+    <!-- contact-form -->
+
 
     <footer>
         <div class="footer-top">
@@ -431,5 +451,6 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js-code.js"></script>
 </body>
 </html>
