@@ -279,3 +279,6 @@ footer {
   background-color: var(--primary);
   border-color: var(--dark);
 }
+.choose{
+  color:#e74d17;
+}
