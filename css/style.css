@@ -252,15 +252,23 @@ form .form-control {
   background-color: #242933;
 }
 
-
-footer{
-
+footer {
 }
 
-
 .footer-top {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-    background-image: url(../img/IMG_2274.jpg);
-    background-size: cover;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background-image: url(../img/IMG_2274.jpg);
+  background-size: cover;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary {
+  background-color: #77b84e;
+  border-color: var(--dark);
 }
