@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 :root {
   --primary: #e74d17;
   --Secondary: #77b84e;
@@ -10,7 +9,7 @@
 }
 
 body {
-  font-family: "Sora", sans-serif;
+  font-family: "open sans", sans-serif;
   line-height: 1.7;
   color: var(--body);
 }
@@ -41,6 +40,8 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
+
+  background-size: contain No-repeat;
 }
 
 .logo {
@@ -48,8 +49,11 @@ img {
 }
 
 .navbar .nav-link {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
+  margin: 1rem;
+  border-bottom: 6px solid var(--dark);
+  border-color: linear-gradient(var(--Secondary), var(--primary));
 }
 
 .navbar .nav-link.active {
@@ -59,11 +63,11 @@ img {
 .btn {
   padding: 14px 18px;
   border-width: 2px;
-  border-radius: 0;
+  border-radius: 10%;
 }
 
 .hero {
-  background-image: url(../img/cover.jpg);
+  background-image: url(../img/hero-background-3.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -125,7 +129,8 @@ section {
   position: absolute;
   top: -100%;
   left: 0;
-  background-color: var(--primary);
+  background-image: linear-gradient(to right, var(--primary), var(--dark));
+
   z-index: -1;
   opacity: 0;
   transition: all 0.4s ease;
@@ -241,7 +246,7 @@ form .form-control {
 }
 
 .footer-top a {
-  color: var(--body);
+  color: var(--white);
 }
 
 .footer-top a:hover {
@@ -256,10 +261,12 @@ footer {
 }
 
 .footer-top {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  background-image: url(../img/IMG_2274.jpg);
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  /* background-image: url(../img/IMG_2274.jpg); */
+  background-image: linear-gradient(to right, var(--primary), var(--dark));
   background-size: cover;
+  color: #fff !important;
 }
 
 .btn-primary:hover {
@@ -269,6 +276,6 @@ footer {
 }
 
 .btn-primary {
-  background-color: #77b84e;
+  background-color: var(--primary);
   border-color: var(--dark);
 }
