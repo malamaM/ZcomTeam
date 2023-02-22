@@ -39,6 +39,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<?php
+    if(isset($_POST['submit'])){
+        $to = "mutambojoe1@outlook.com"; // Replace with your email address
+        $subject = "New contact form submission";
+    
+        // Retrieve the data submitted from the form
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+    
+        // Construct the message body
+        $body = "Name: $name\n\n";
+        $body .= "Email: $email\n\n";
+        $body .= "Message: $message\n\n";
+    
+        // Send the email
+        if(mail($to, $subject, $body)){
+            echo "Thank you for your message!";
+        } else {
+            echo "There was a problem sending your message.";
+        }
+    }
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
