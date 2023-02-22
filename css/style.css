@@ -30,8 +30,12 @@ h6,
 }
 
 a {
-  color: var(--dark);
+  color: var(--white);
   text-decoration: none;
+}
+
+.nav-link{
+  color:#fff !important;
 }
 
 img {
@@ -40,8 +44,9 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
-
+  background-image: linear-gradient(to right, var(--primary),var(--dark));
   background-size: contain No-repeat;
+  color: #fff;
 }
 
 .logo {

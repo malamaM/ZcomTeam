@@ -36,10 +36,10 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#aboutus">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact-form">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -51,11 +51,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 mx-auto text-center">
-                    <h1 class="display-4 text-white">Build robust And Quality Software With Us</h1>
+                    <h1 id="tagline" class="display-4 text-white"></h1>
                     <p class="text-white my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quia
                         sequi eius. Quas, totam aliquid. Repudiandae reiciendis vel excepturi ipsa voluptate dicta!</p>
                     <a href="#" class="btn me-2 btn-primary ">Get Started</a>
-                    <a href="#" class="btn btn-outline-light">My Portfolio</a>
+                    <a href="#portfolio" class="btn btn-outline-light">Our Portfolio</a>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
-                        <h1>ABOUT US</h6>
+                        <h1 id="aboutus">ABOUT US</h6>
                         <h6 class="choose">WHY CHOOSE US?</h6>
 
                         <h3>Best solution for your business</h3>
@@ -454,4 +454,39 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/js-code.js"></script>
 </body>
+<script>
+    const taglines = [  "Innovate faster with our low-code platform",  "Empower your team with low-code solutions",  "Transform your business with our low-code platform",  "Accelerate your development with low-code technology",  "Streamline your workflow with low-code solutions",  "Build better software with our low-code platform",  "Revolutionize your IT with low-code technology"];
+const taglineElement = document.getElementById("tagline");
+
+let taglineIndex = 0;
+let letterIndex = 0;
+let intervalId;
+
+function displayNextLetter() {
+  const tagline = taglines[taglineIndex];
+  taglineElement.textContent = tagline.substr(0, letterIndex + 1);
+  letterIndex++;
+  if (letterIndex === tagline.length) {
+    clearInterval(intervalId);
+    setTimeout(function() {
+      intervalId = setInterval(hideLastLetter, 100);
+    }, 2000);
+  }
+}
+
+function hideLastLetter() {
+  taglineElement.textContent = taglineElement.textContent.substr(0, taglineElement.textContent.length - 1);
+  if (taglineElement.textContent === "") {
+    taglineIndex++;
+    if (taglineIndex === taglines.length) {
+      taglineIndex = 0;
+    }
+    letterIndex = 0;
+    clearInterval(intervalId);
+    intervalId = setInterval(displayNextLetter, 50);
+  }
+}
+
+intervalId = setInterval(displayNextLetter, 50);
+</script>
 </html>
