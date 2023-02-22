@@ -284,12 +284,14 @@ footer {
 }
 
 /*contact form*/
+
 #contact-form {
-  background-color: var(--dark);
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
+  border: 1px solid #888;
   margin-bottom: 34px;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -297,7 +299,7 @@ footer {
 #contact-form label {
   display: block;
   margin-bottom: 5px;
-  color: white;
+  color: #21252f;
 }
 
 #contact-form input,
@@ -307,6 +309,7 @@ footer {
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
+  border: 1px solid #888;
 }
 
 #contact-form textarea {
@@ -323,11 +326,11 @@ footer {
 }
 
 #send-button:hover {
-  background-color: #d35400;
+  background-color: #d35400 !important;
 }
 
 #clear-button {
-  background-color: #ccc;
+  background-color: #d35400 !important;
   color: #fff;
   border: none;
   padding: 10px 20px;
